@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+       
+       .header {
+        position: relative;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: transparent;
+        height: 100px;
+}
+
+    .logo-left2 {
+      position: relative;
+    top: -18px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    background-color: transparent;
+    background-image: url('fitgroup1.png'); /* Substitua pelo caminho da sua imagem */
+    left: calc(10px - 2vw); /* Adicionei 2vw para tornar a posição responsiva */
+    margin-left: -240px;
+    transition: left 1.2s ease-in-out; /* Adicione uma transição suave */
+}
+
+
+.logo-right {
+    /* Configurações da logo à direita */
+    position: relative;
+    top: -10px;
+    width: 200px;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    background-color: transparent;
+    background-image: url('cast-cor-V1.png'); /* Substitua 'logoDireita.png' pelo nome da imagem */
+    left: 120px;
+    
+}
+
+
+
+
+
+
+
+.logo-right2{
+
+    position: relative;
+    margin-top:-190px;
+    top: 32px;
+    width: 150px;
+    height: 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 125px;
+    background-color: transparent;
+    background-image: url('cast-cor-V1.png'); /* Substitua 'cast-cor-V1.png' pelo nome da sua imagem */
+    left: calc(-48% + 100vw); /* Adapte o valor do 2vw conforme necessário */
+    transition: left 0.2s ease-in-out; /* Adicione uma transição suave */
+
+}
+   
+  
+  .logo-left {
+    position: relative;
+    top: -3px;
+    width: 100px;
+    height: 95px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    background-color: transparent;
+    /* Substitua o caminho da imagem abaixo pelo caminho da sua primeira logo */
+    background-image: url(fitgroup1.png);
+    left: 15px;
+}      
+        
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  color: black;
+  position: relative;
+  left: 50px;
+}
+.title2 {
+  font-size: 13px;
+font-weight: bold;
+text-align: center;
+margin: 0;
+color: black;
+position: relative;
+left: calc(-58% + 60vw);
+margin-right:15px;
+top:-70px;
+}
+
+
+form {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body {
+  background-color: #031f3f;
+  color: #000000;
+  font-family: 'Poppins';
+}
+
+.row-container,
+.row-container1{
+ /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+ /margin-bottom: 20px;*/
+  background-color: #d9d9d9;
+  color: white;
+ width: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #c7c7c7;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+}
+
+.section-title {
+  color: white;
+  font-weight: bold;
+  font-size:18px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.arrow-down {
+  width: 20px;
+  height: 20px;
+  background-image: url("imagens/arrow-down.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+}
+
+.title {
+    position:relative;
+    left:70px;
+}
+
+@media (min-width: 0px) and (max-width: 415px) {
+    .header {
+    width: 130%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    height: auto;
+    max-width: 445px; 
+    margin: 0 auto;
+
+    
+  }
+  
+ html, body {
+  width: 100%;
+  max-width: 445px; 
+  margin: 0 auto; /* Centraliza o body horizontalmente */
+  background-color: #031f3f;
+  color: #000000;
+  font-family: 'Poppins';
+  overflow-x: hidden;
+}
+
+  .logo-left{
+    width: 60px;
+    height: 57px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position:relative;
+    right:1000px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    color: black;
+  }
+.row-container
+{
+    width: 100%;
+
+    padding: 0;
+    background-color: #d9d9d9;
+ 
+  }
+    
+}
+
+
+    
+        
+@media (min-width: 416px) and (max-width: 1300px) {
+
+    .header {
+        width: 150%; /* Aumente a largura para 150% */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+        height: auto;
+        max-width: 2800px;
+        margin: 0 auto;
+        margin-left: calc(-13vw + 110px); /* Ajusta a margem para centralizar o header */
+    }
+    .title2 {
+        font-size: 26px; /* Ajuste o tamanho da fonte conforme necessário */
+        text-align: center;
+        margin: 10px;
+        color: black;
+    white-space: nowrap; /* Evita quebras de linha */
+    margin-left:2200px;
+
+
+    }
+
+    /* Estilo para os logos */
+    .logo-left2{
+        margin: 10px 0; 
+        width: 80px; 
+        height: 75px; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin-left:-1600px;
+        top:0px;
+    }
+    .logo-right2 {
+    position:relative;
+    margin-top:-190px;
+    top: -9px;
+    width: 160px; 
+        height: 135px; 
+    margin-left:1900px;
+    }
+    
+} 
+   
+   @media (min-width: 416px) and (max-width: 767px){
+       html, body {
+        width: 100%;
+        margin: 0 auto; /* Centraliza o body horizontalmente */
+        font-family: 'Poppins';
+        overflow: hidden;     /*   Adiciona overflow hidden */
+        font-size: 87.5%;
+       
+}
+
+    .header {
+        width: 111.9%; /* Aumente a largura para 150% */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+        height: auto;
+        max-width: 2770px;
+        margin: 0 auto;
+      /*  margin-left: calc(-25vw + 110px);  Ajusta a margem para centralizar o header */
+    }
+    .title2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    white-space: nowrap;
+    position: relative;
+    left: calc(-110px + 15vw); /* Ajuste o valor conforme necessário */
+    top: -70px;
+    transition: left 0.2s ease; /* Adiciona uma transição suave */
+    }
+      /* Estilo para os logos */
+    .logo-left2{
+        margin: 10px 0; 
+    width: 80px; 
+    height: 75px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: calc(300px + 40vw); /* Move o elemento para a esquerda */
+    top: 0px;
+      
+    }
+    .logo-right2 {
+    position:relative;
+    margin-top:-190px;
+    top: 0px;
+    width: 160px; 
+        height: 135px; 
+     margin-left: calc(0px + -15vw); /* Ajusta o valor conforme a largura da tela diminui */
+    transition: margin-left 0.5s ease; /* Adiciona uma transição suave */
+    }
+
+           
+}
+
+        
+   
+   
+        
+@media (min-width: 416px) and (max-width: 1300px) {
+
+    .header {
+        width: 150%; /* Aumente a largura para 150% */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+        height: auto;
+        max-width: 2800px;
+        margin: 0 auto;
+        margin-left: calc(-13vw + 110px); /* Ajusta a margem para centralizar o header */
+    }
+    .title2 {
+        font-size: 26px; /* Ajuste o tamanho da fonte conforme necessário */
+        text-align: center;
+        margin: 10px;
+        color: black;
+    white-space: nowrap; /* Evita quebras de linha */
+    margin-left:2200px;
+
+
+    }
+
+    /* Estilo para os logos */
+    .logo-left2{
+        margin: 10px 0; 
+        width: 80px; 
+        height: 75px; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin-left:-1600px;
+        top:0px;
+    }
+    .logo-right2 {
+    position:relative;
+    margin-top:-190px;
+    top: -9px;
+    width: 160px; 
+        height: 135px; 
+    margin-left:1900px;
+    }
+   
+} 
+   
+   @media (min-width: 768px) and (max-width: 3000px){
+     html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  overflow-x: hidden; /* Esconde a rolagem horizontal */
+}
+
+       
+
+
+
+    
+
+    .header {
+        width: 105.0%; /* Aumente a largura para 150% */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+        height: auto;
+        max-width: 2670px;
+        margin: 0 auto;
+      /*  margin-left: calc(-25vw + 110px);  Ajusta a margem para centralizar o header */
+    }
+    .title {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    white-space: nowrap;
+    position: relative;
+    left: calc(-10px + 00vw); /* Ajuste o valor conforme necessário */
+    top: -80px;
+    transition: left 0.2s ease; /* Adiciona uma transição suave */
+    font-size:30px;
+
+
+    }
+       }
+
+
+    /* Estilo para os logos */
+    .logo-left{
+        margin: 20px 0; 
+    width: 80px; 
+    height: 75px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: calc(-100px + 100vw); /* Move o elemento para a esquerda */
+    top: 0px;
+   
+    }
+    .logo-right {
+    position:relative;
+    margin-top:-190px;
+    top: 0px;
+    width: 160px; 
+    height: 135px; 
+     margin-left: calc(110vw + -500px); /* Ajusta o valor conforme a largura da tela diminui */
+    transition: margin-left 0.5s ease; /* Adiciona uma transição suave */
+  
+    }
+    
+
+/* Ajuste os valores conforme necessario celular*/
+
+
+
+        h2{
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin: 1rem 0;
+        }
+    </style>
+   
+<!-- Versão para dispositivos entre 150px e 416px -->
+<header class="header container-fluid d-flex d-md-none justify-content-center align-items-center">
+    <div class="logo-left2"></div>
+    <h1 class="title2">Formulário de cadastramento <br> de vaga</h1>
+    <div class="logo-right2"></div>
+</header>
+
+<!-- Versão para dispositivos a partir de 416px -->
+<header class="header container-fluid d-none d-xl-flex justify-content-center align-items-center">
+    <div class="logo-left"></div>
+    <h1 class="title">Formulário de cadastramento de vaga</h1>
+    <div class="logo-right"></div>
+</header>
+
+
+
+
+
+   
+
+    <form method="POST" action="processar.php">
+   <div class="section-title">Dados do Solicitante
+    </div>
+          <style>
+            input{
+                width: 100%;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+            
+                justify-content: flex-start;
+                gap: 2rem;
+            }
+          
+            .row-container1{
+                gap: 2rem;
+               display: grid;
+               grid-template-columns: 1fr 300px 300px;
+               align-items: start;
+               padding: 2.5rem;
+            }
+          </style>  
+            <div class="row-container1">
+                <div class="column">
+                    <!-- Área 1 -->
+                    <div class="coluna1">
+                       <!--  <label for="empresa" style="visibility: hidden;">Empresa:</label>--> 
+                        <input type="text" id="empresa" name="empresa" placeholder="empresa" required>
+                    </div>
+    
+                    <!-- Área 2 -->
+                    <div class="coluna1">
+                     <!--   <label for="e-mail" style="visibility: hidden;">E-mail:</label>-->  
+                        <input type="email" id="e-mail" name="e-mail" placeholder="e-mail" required>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <!-- Área 3 -->
+                    <div class="coluna2">
+                      <!--   <label for="cnpj" style="visibility: hidden;">CNPJ</label>--> 
+                        <input type="text" id="cnpj" name="cnpj" placeholder="cnpj" required>
+                    </div>
+    
+                    <!-- Área 4 -->
+                    <div class="coluna2">
+                       <!--  <label for="fone" style="visibility: hidden;">Fone Solicitante:</label> -->
+                        <input type="text" id="fone" name="fone" placeholder="fone Solicitante" required>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <!-- Área 5 -->
+                    <div class="coluna3">
+                        <!-- <label for="nome-solicitante" style="visibility: hidden;">Nome do Solicitante:</label>--> 
+                        <input type="text" id="nome-solicitante" name="nome-solicitante" placeholder="nome solicitante" required>
+                    </div>
+                </div>
+            </div>
+    
+          <h2>Dados da Vaga</h2>
+    <style>
+        .row-container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            padding: 2.5rem;
+        }
+    </style>
+            <div class="row-container"  > 
+                <div class="column">
+                    
+                    <!-- Nova Área 1 -->
+                    <div class="coluna4">
+                       <!--  <label for="titulo-contratacao" style="visibility: hidden;">Título de Contratação:</label>--> 
+                        <input type="text" id="titulo-contratacao" name="titulo-contratacao" placeholder="Modelo de contratação" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                    </div>
+                    <!-- Nova Área 2 -->
+                    <div class="coluna4">
+                      <!--   <label for="modalidade-contratacao" style="visibility: hidden;">Modalidade de Contratação:</label>--> 
+                        <input type="text" id="modalidade-contratacao" name="modalidade-contratacao" placeholder="Tipo de contratação" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                    </div>
+                    <!-- Nova Área 3 -->
+                    <div class="coluna4">
+                      <!--   <label for="periodo-contratacao" style="visibility: hidden;">Período de Contratação:</label>--> 
+                        <input type="text" id="periodo-contratacao" name="periodo-contratacao" placeholder="Local  de contratação" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Nova Área 4 -->
+                    <div class="coluna5">
+                       <!--<label for="posicao" style="visibility: hidden;">Posição:</label> --> 
+                        <input type="text" id="posicao" name="posicao" placeholder="Cargo" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                    </div>
+                    <!-- Nova Área 5 -->
+                    <div class="coluna5">
+                        <!--<label for="horario-trabalho" style="visibility: hidden;">Horário de Trabalho:</label>--> 
+                        <input type="text" id="horario-trabalho" name="horario-trabalho" placeholder="Horário de trabalho" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                    </div>
+                    <!-- Nova Área 6 -->
+                    <div class="coluna5">
+                       <!-- <label for="prioridade-contratacao" style="visibility: hidden;">Prioridade de Contratação:</label>--> 
+                        <input type="text" id="prioridade-contratacao" name="prioridade-contratacao" placeholder="Prioridade de contratação" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Nova Área 7 -->
+                    <div class="coluna6">
+              
+                       <!-- <label for="senioridade" style="visibility: hidden;">Senioridade:</label>-->  
+                        <input type="text" id="senioridade" name="senioridade" placeholder="Senioridade" required >
+                        <i class="fi fi-rr-caret-down"></i>
+            
+                     </div>
+                    <!-- Nova Área 8 -->
+                    <div class="coluna6">
+                     
+                        <!--  <label for="regime-trabalho" style="visibility: hidden;">Regime de Trabalho:</label>-->
+                        <input type="text" id="regime-trabalho" name="regime-trabalho" placeholder="Regime de trabalho" required>
+                        <i class="fi fi-rr-caret-down"></i>
+                   
+                     </div>
+                    <!-- Nova Área 9 -->
+                    <div class="coluna6">
+                        <!--  <label for="budget-maximo" style="visibility: hidden;">Orçamento Máximo:</label>-->
+                        <input type="text" id="budget-maximo" name="budget-maximo" placeholder="Budget maximo" required >
+                        <i class="fi fi-rr-caret-down"></i>
+           
+                </div>
+            </div>
+             </div>
+             <style>
+                .comportamento_require{
+                    width: 100%;
+        
+                    display: flex;
+                    flex-direction: column;
+                }
+                #requisitos_compoortamentais{
+                    width: 100%;
+                    height: 200px;
+                }
+             </style>
+             <br>
+    <div  class="comportamento_require text-center" >
+    <div class="section-title">   
+         <h2>
+            Requisitos Comportamentais <br>(Obrigatórios e Desejáveis)
+        </h2>
+         <textarea id="requisitos_compoortamentais" name="requisitos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, nostrum commodi! Esse, corporis. Quibusdam voluptatem necessitatibus est porro asperiores id saepe, reiciendis eum beatae. Quod quisquam a accusamus eos excepturi!</textarea>
+    </div>
+</div>
+   
+   <style>
+  
+    #requisitos_Tecnicos2 textarea{
+        width: 100%;
+        height: 200px;
+    }
+   </style>
+ >
+    <div id="requisitos_Tecnicos2" class="section-title" >
+        <h2>
+            Requisitos Técnicos (Obrigatórios e Desejáveis)
+        </h2>
+       <div>
+            <textarea id="requisitos" name="requisitos"></textarea>
+        </div>
+   
+    </div>
+ 
+ <style>
+    
+    .responsabilidades {
+        width: 100%;
+    }
+    .responsabilidades textarea{
+        width: 100%;
+        height: 200px;
+    }
+ </style>
+<div class="responsabilidades">
+    <h2>Responsabilidades</h2>
+    <textarea id="responsabilidades" name="responsabilidades"></textarea>
+</div>
+
+ 
+
+    <style>
+      
+        .beneficios{
+            width: 100%;
+        }
+        .beneficios textarea{
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+    <div class="beneficios">
+    <h2>Descreva os benefícios</h2>
+        <textarea id="beneficios" name="beneficios" ></textarea>
+    </div>
+
+                
+
+<style>
+    
+  #submit-button-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+
+  }
+  #submit-button-mobile button {
+    background-color: #E8691A;
+    color: white;
+    padding: 10px 120px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+ 
+</style>
+    <div id="submit-button-mobile">
+        <button id="enviarButton" class="submit" type="submit">
+            Enviar
+        </button>
+    </div>
+
+
+
+    </form>
+    
+
+ 
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
+
