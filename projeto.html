@@ -11,87 +11,40 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
        
-       .header {
-        position: relative;
-        margin-top: 2px;
-        margin-bottom: 2px;
+.header {
+        
         background-color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: transparent;
         height: 100px;
 }
 
     .logo-left2 {
-      position: relative;
-    top: -18px;
+  
     width: 70px;
     height: 70px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 100px;
+   
     background-color: transparent;
     background-image: url('fitgroup1.png'); /* Substitua pelo caminho da sua imagem */
-    left: calc(10px - 2vw); /* Adicionei 2vw para tornar a posição responsiva */
-    margin-left: -240px;
     transition: left 1.2s ease-in-out; /* Adicione uma transição suave */
 }
-
-
-.logo-right {
-    /* Configurações da logo à direita */
-    position: relative;
-    top: -10px;
-    width: 200px;
-    height: 180px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 100px;
-    background-color: transparent;
-    background-image: url('cast-cor-V1.png'); /* Substitua 'logoDireita.png' pelo nome da imagem */
-    left: 120px;
-    
-}
-
-
-
-
-
-
+ 
 
 .logo-right2{
-
     position: relative;
-    margin-top:-190px;
-    top: 32px;
     width: 150px;
     height: 130px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 125px;
     background-color: transparent;
     background-image: url('cast-cor-V1.png'); /* Substitua 'cast-cor-V1.png' pelo nome da sua imagem */
-    left: calc(-48% + 100vw); /* Adapte o valor do 2vw conforme necessário */
     transition: left 0.2s ease-in-out; /* Adicione uma transição suave */
 
 }
-   
-  
-  .logo-left {
-    position: relative;
-    top: -3px;
-    width: 100px;
-    height: 95px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 100px;
-    background-color: transparent;
-    /* Substitua o caminho da imagem abaixo pelo caminho da sua primeira logo */
-    background-image: url(fitgroup1.png);
-    left: 15px;
-}      
-        
+      
 .title {
   font-size: 24px;
   font-weight: bold;
@@ -99,19 +52,8 @@
   margin: 0;
   color: black;
   position: relative;
-  left: 50px;
 }
-.title2 {
-  font-size: 13px;
-font-weight: bold;
-text-align: center;
-margin: 0;
-color: black;
-position: relative;
-left: calc(-58% + 60vw);
-margin-right:15px;
-top:-70px;
-}
+ 
 
 
 form {
@@ -133,19 +75,21 @@ body {
 
 .row-container,
 .row-container1{
- /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
- /margin-bottom: 20px;*/
   background-color: #d9d9d9;
   color: white;
- width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
-
-
-
-
+.row-container
+{
+    width: 100%;
+    padding: 0;
+    background-color: #d9d9d9;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2.5rem;
+  }
 
 input[type="text"],
 input[type="email"],
@@ -182,37 +126,9 @@ label {
   font-weight: bold;
 }
 
-.title {
-    position:relative;
-    left:70px;
-}
-
+ 
 @media (min-width: 0px) and (max-width: 415px) {
-    .header {
-    width: 130%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    height: auto;
-    max-width: 445px; 
-    margin: 0 auto;
-
     
-  }
-  
- html, body {
-  width: 100%;
-  max-width: 445px; 
-  margin: 0 auto; /* Centraliza o body horizontalmente */
-  background-color: #031f3f;
-  color: #000000;
-  font-family: 'Poppins';
-  overflow-x: hidden;
-}
-
   .logo-left{
     width: 60px;
     height: 57px;
@@ -230,303 +146,84 @@ label {
     margin: 5px;
     color: black;
   }
-.row-container
-{
-    width: 100%;
 
-    padding: 0;
-    background-color: #d9d9d9;
- 
-  }
     
 }
 
+   @media (max-width: 760px){
+        html{font-size: 87.5%;}
+   }
 
-    
-        
-@media (min-width: 416px) and (max-width: 1300px) {
-
-    .header {
-        width: 150%; /* Aumente a largura para 150% */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: #ffffff;
-        height: auto;
-        max-width: 2800px;
-        margin: 0 auto;
-        margin-left: calc(-13vw + 110px); /* Ajusta a margem para centralizar o header */
-    }
-    .title2 {
-        font-size: 26px; /* Ajuste o tamanho da fonte conforme necessário */
+   
+    h2{
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
         text-align: center;
-        margin: 10px;
-        color: black;
-    white-space: nowrap; /* Evita quebras de linha */
-    margin-left:2200px;
-
-
+        margin: 1rem 0;
     }
 
-    /* Estilo para os logos */
-    .logo-left2{
-        margin: 10px 0; 
-        width: 80px; 
-        height: 75px; 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        margin-left:-1600px;
-        top:0px;
-    }
-    .logo-right2 {
-    position:relative;
-    margin-top:-190px;
-    top: -9px;
-    width: 160px; 
-        height: 135px; 
-    margin-left:1900px;
-    }
-    
-} 
-   
-   @media (min-width: 416px) and (max-width: 767px){
-       html, body {
-        width: 100%;
-        margin: 0 auto; /* Centraliza o body horizontalmente */
-        font-family: 'Poppins';
-        overflow: hidden;     /*   Adiciona overflow hidden */
-        font-size: 87.5%;
-       
-}
 
-    .header {
-        width: 111.9%; /* Aumente a largura para 150% */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: #ffffff;
-        height: auto;
-        max-width: 2770px;
-        margin: 0 auto;
-      /*  margin-left: calc(-25vw + 110px);  Ajusta a margem para centralizar o header */
-    }
-    .title2 {
-    font-size: 18px;
-    text-align: center;
-    margin: 10px;
-    color: black;
-    white-space: nowrap;
-    position: relative;
-    left: calc(-110px + 15vw); /* Ajuste o valor conforme necessário */
-    top: -70px;
-    transition: left 0.2s ease; /* Adiciona uma transição suave */
-    }
-      /* Estilo para os logos */
-    .logo-left2{
-        margin: 10px 0; 
-    width: 80px; 
-    height: 75px; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    margin-right: calc(300px + 40vw); /* Move o elemento para a esquerda */
-    top: 0px;
-      
-    }
-    .logo-right2 {
-    position:relative;
-    margin-top:-190px;
-    top: 0px;
-    width: 160px; 
-        height: 135px; 
-     margin-left: calc(0px + -15vw); /* Ajusta o valor conforme a largura da tela diminui */
-    transition: margin-left 0.5s ease; /* Adiciona uma transição suave */
-    }
-
-           
-}
-
-        
-   
-   
-        
-@media (min-width: 416px) and (max-width: 1300px) {
-
-    .header {
-        width: 150%; /* Aumente a largura para 150% */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: #ffffff;
-        height: auto;
-        max-width: 2800px;
-        margin: 0 auto;
-        margin-left: calc(-13vw + 110px); /* Ajusta a margem para centralizar o header */
-    }
-    .title2 {
-        font-size: 26px; /* Ajuste o tamanho da fonte conforme necessário */
-        text-align: center;
-        margin: 10px;
-        color: black;
-    white-space: nowrap; /* Evita quebras de linha */
-    margin-left:2200px;
-
-
-    }
-
-    /* Estilo para os logos */
-    .logo-left2{
-        margin: 10px 0; 
-        width: 80px; 
-        height: 75px; 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        margin-left:-1600px;
-        top:0px;
-    }
-    .logo-right2 {
-    position:relative;
-    margin-top:-190px;
-    top: -9px;
-    width: 160px; 
-        height: 135px; 
-    margin-left:1900px;
-    }
-   
-} 
-   
-   @media (min-width: 768px) and (max-width: 3000px){
-     html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins';
-  overflow-x: hidden; /* Esconde a rolagem horizontal */
-}
-
-       
-
-
-
-    
-
-    .header {
-        width: 105.0%; /* Aumente a largura para 150% */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: #ffffff;
-        height: auto;
-        max-width: 2670px;
-        margin: 0 auto;
-      /*  margin-left: calc(-25vw + 110px);  Ajusta a margem para centralizar o header */
-    }
-    .title {
-    font-size: 18px;
-    text-align: center;
-    margin: 10px;
-    color: black;
-    white-space: nowrap;
-    position: relative;
-    left: calc(-10px + 00vw); /* Ajuste o valor conforme necessário */
-    top: -80px;
-    transition: left 0.2s ease; /* Adiciona uma transição suave */
-    font-size:30px;
-
-
-    }
-       }
-
-
-    /* Estilo para os logos */
-    .logo-left{
-        margin: 20px 0; 
-    width: 80px; 
-    height: 75px; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    margin-right: calc(-100px + 100vw); /* Move o elemento para a esquerda */
-    top: 0px;
-   
-    }
-    .logo-right {
-    position:relative;
-    margin-top:-190px;
-    top: 0px;
-    width: 160px; 
-    height: 135px; 
-     margin-left: calc(110vw + -500px); /* Ajusta o valor conforme a largura da tela diminui */
-    transition: margin-left 0.5s ease; /* Adiciona uma transição suave */
-  
-    }
-    
-
-/* Ajuste os valores conforme necessario celular*/
-
-
-
-        h2{
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
-            text-align: center;
-            margin: 1rem 0;
+    input{
+            width: 100%;
         }
+        .column{
+            display: flex;
+            flex-direction: column;
+        
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+      
+        .row-container1{
+            gap: 2rem;
+           display: grid;
+           grid-template-columns: 1fr 300px 300px;
+           align-items: start;
+           padding: 2.5rem;
+        }
+        
+     
+     @media (max-width: 1200px){
+   
+        form{
+            padding: 0 2rem;
+            width: 100%;
+        }
+        .row-container1{
+            grid-template-columns: 1fr 150px 150px;
+        }
+        }
+        @media (max-width: 720px){
+                .row-container1{
+                    grid-template-columns: 1fr  1fr  1fr 
+            }
+        }
+        @media (max-width: 520px){
+            .row-container1, .row-container{
+                grid-template-columns: 1fr;
+            }
+            .title{
+                font-size: 18px;
+            }
+        }
+   
+   
     </style>
    
 <!-- Versão para dispositivos entre 150px e 416px -->
-<header class="header container-fluid d-flex d-md-none justify-content-center align-items-center">
+<header class="header">
     <div class="logo-left2"></div>
-    <h1 class="title2">Formulário de cadastramento <br> de vaga</h1>
+    <div><h1 class="title">Formulário de cadastramento  de vaga</h1></div>
     <div class="logo-right2"></div>
 </header>
-
-<!-- Versão para dispositivos a partir de 416px -->
-<header class="header container-fluid d-none d-xl-flex justify-content-center align-items-center">
-    <div class="logo-left"></div>
-    <h1 class="title">Formulário de cadastramento de vaga</h1>
-    <div class="logo-right"></div>
-</header>
-
-
-
-
-
-   
 
     <form method="POST" action="processar.php">
    <div class="section-title">Dados do Solicitante
     </div>
           <style>
-            input{
-                width: 100%;
-            }
-            .column{
-                display: flex;
-                flex-direction: column;
-            
-                justify-content: flex-start;
-                gap: 2rem;
-            }
           
-            .row-container1{
-                gap: 2rem;
-               display: grid;
-               grid-template-columns: 1fr 300px 300px;
-               align-items: start;
-               padding: 2.5rem;
-            }
+            
           </style>  
             <div class="row-container1">
                 <div class="column">
@@ -568,12 +265,7 @@ label {
     
           <h2>Dados da Vaga</h2>
     <style>
-        .row-container{
-            display:grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 2rem;
-            padding: 2.5rem;
-        }
+      
     </style>
             <div class="row-container"  > 
                 <div class="column">
@@ -661,7 +353,7 @@ label {
          <h2>
             Requisitos Comportamentais <br>(Obrigatórios e Desejáveis)
         </h2>
-         <textarea id="requisitos_compoortamentais" name="requisitos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, nostrum commodi! Esse, corporis. Quibusdam voluptatem necessitatibus est porro asperiores id saepe, reiciendis eum beatae. Quod quisquam a accusamus eos excepturi!</textarea>
+         <textarea id="requisitos_compoortamentais" name="requisitos"></textarea>
     </div>
 </div>
    
